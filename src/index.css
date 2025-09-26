@@ -211,9 +211,8 @@ body {
     }
 
     .card-container {
-        padding: 0;
+        padding: 2rem 0;
         gap: 1.5rem;
         grid-template-columns: minmax(0, 1fr);
     }
 }
-
