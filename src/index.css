@@ -1,0 +1,205 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; 
+        }
+
+
+.page-container {
+    padding: 2rem; 
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.page-title {
+    font-size: 3.5rem; 
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    
+    background: linear-gradient(90deg, #8A2BE2, #A040FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #888; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2.5rem; 
+            padding: 2.5rem;
+        }
+
+        .series-card {
+            background-color: #1a1a1a; 
+            border-radius: 1rem;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .series-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 0 40px rgba(76, 29, 149, 0.4); 
+        }
+
+        .card-poster-container {
+            position: relative;
+            height: 280px; 
+        }
+
+        .card-poster-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .rating-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: rgba(250, 204, 21, 0.9); 
+            color: #1a1a1a;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .rating-badge .vote-count {
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-left: 0.25rem;
+            opacity: 0.8;
+        }
+
+        .adult-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: rgba(220, 38, 38, 0.9); 
+            color: white;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            backdrop-filter: blur(5px);
+        }
+
+.card-content {
+    padding: 0.75rem 1.5rem 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+        .series-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 0.05rem;
+}
+
+.series-info {
+    font-size: 0.875rem;
+    color: #888;
+    margin-bottom: 0.05rem; 
+}
+
+.series-synopsis {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    flex-grow: 1; 
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+        .card-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: auto; 
+        }
+
+        .action-btn {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #8A2BE2, #4B0082);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+        }
+
+        .btn-secondary {
+            background-color: #282828;
+            color: #d1d1d1;
+        }
+
+        .btn-secondary:hover {
+            background-color: #383838;
+        }
+
+        .loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-color: rgba(20, 20, 20, 0.8);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3; 
+  border-top: 5px solid #8A2BE2; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite; 
+}
+
+.center{
+  text-align: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
