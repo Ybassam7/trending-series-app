@@ -3,7 +3,7 @@
 
 A sleek and responsive web application built with React that displays a curated list of the most popular TV shows trending today, powered by [The Movie Database (TMDB) API](https://www.themoviedb.org/).
 
-### 🚀 [**View Live Demo**]
+### 🚀 [**View Live Demo**](https://trending-series-app.vercel.app/)
 This project demonstrates modern frontend development practices, focusing on asynchronous data fetching from a live API. It includes robust state management to handle loading and error states gracefully, ensuring a smooth and reliable user experience. The entire application is built with reusable components and styled with modern CSS for a clean, professional finish.
 
 ## Core Concepts Practiced
